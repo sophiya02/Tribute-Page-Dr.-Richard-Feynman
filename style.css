@@ -1,0 +1,144 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background: rgb(238, 251, 217);
+}
+
+.content{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+.description{
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(232, 249, 253);
+}
+.aside{
+    background-color: rgb(173, 251, 246);
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.aside .image{
+    margin: 45px 0px 5px 0px;
+}
+
+.aside  img{
+    display : block;
+    width: 500px;
+    margin:auto;
+    
+   box-shadow: -5px -5px 3px rgb(52, 48, 55);
+}
+
+.aside .table{
+    padding: 10px;
+    margin: 50px;
+    /* border: 2px solid red; */
+}
+.aside .table table{
+    margin: auto;
+    /* border: 2px solid blue; */
+}
+.aside .table table .first{
+    margin: 15px;
+    padding: 15px 5px;
+    text-align:center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    border-right:2px solid rgb(33, 37, 33);
+    border-bottom:2px solid rgb(33, 37, 33);
+    box-shadow: 5px 5px 3px rgb(97, 95, 95);
+}
+.aside .table table .Second{
+    
+    padding: 15px 35px;
+    text-align:center;
+    font-size: 2rem;
+    box-shadow: 5px 5px 3px rgb(97, 95, 95);;
+    border-bottom:2px solid rgb(38, 144, 38);
+}
+.aside .table table .Second img{
+    box-shadow: none;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description .article{
+    font-size: 3rem;
+    margin: 150px;
+    padding: 15px 25px;
+    
+}
+.description .container{
+    align-items: center;
+    justify-items: center;
+}
+
+.description b, .description .container label{
+    font-size: 3.5rem;
+}
+.description .container label{
+    /* border: 2px solid red; */
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 30px 25px 30px 100px;
+    border-radius: 55px;
+    background-color: rgb(226, 235, 243);
+    box-shadow: inset 0px -50px rgb(193, 193, 203);
+    cursor: pointer;
+}
+.description .container label::before{
+    content: "+";
+    margin: 50px 25px;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: blue;
+    border: 3px solid blue;
+    background-color: rgba(104, 189, 255, 0.6);
+    border-radius: 50%;
+    align-content: center;
+}
+.description .container label:hover{
+    background-color: rgb(209, 231, 250);
+    font-size: 60px;
+    box-shadow: inset 0px -50px rgb(193, 193, 203);
+    transition: all 0.25s  ;
+}
+.description .container label:hover::before{
+    background-color: rgb(114, 184, 246);
+    
+}
+.description .container .collapsible-content {
+    overflow-y: hidden;
+  height: 0;
+}
+input[type='checkbox']{
+    display:none;
+}
+
+.container .toggle:checked ~ .collapsible-content{
+    background-color: rgb(213, 234, 251);
+    width: 80%;
+    margin:0px auto 50px auto;
+    padding: 5px 25px;
+    padding: 15px 25px 15px 25px;
+    border: 2px solid blue;
+    height: auto;
+    overflow: visible;
+    font-size: 2.5rem;
+    transition:all 0.2s ease;
+    box-shadow:15px 15px rgb(98, 98, 101)
+}
+
+
+
+
+
+    
